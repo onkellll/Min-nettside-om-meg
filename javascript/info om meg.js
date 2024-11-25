@@ -1,18 +1,28 @@
-function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-let = tablinks = document.getElementsByClassName("tablink");
- for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundcolor = "";
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a [href*='+ id + ' ]').classList.add('active')
+            })
+        }
+
+    })
 }
 
-document.getElementById(pageName).style.display = "block"
-elmnt.style.backgroundcolor = color;
- }
 
- // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
