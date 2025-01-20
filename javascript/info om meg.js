@@ -22,3 +22,33 @@ window.onscroll = () => {
     })
 }
 
+function toggleMenu() {
+    // Toggle sidebaren åpen/lukket
+    document.getElementById("minSidebar").classList.toggle("open");
+
+    // Toggle mellom hamburger og kryss for header-ikonet
+    var bars = document.querySelector(".meny");
+    bars.classList.toggle("change");
+}
+
+
+// Funksjon for å lukke menyen
+function closeNav() {
+    document.getElementById("minSidebar").classList.remove("open");
+    document.querySelector(".meny").classList.remove("change");
+}
+
+// Funksjon for å åpne/lukke menyen og endre hamburger-ikonet
+function toggleMenu() {
+    // Toggle sidebar open/close
+    document.getElementById("minSidebar").classList.toggle("open");
+
+    // Toggle hamburgermeny-ikonet (endre til kryss eller tilbake til hamburger)
+    document.querySelector(".meny").classList.toggle("change");
+}
+
+// Funksjon for å lukke menyen når man klikker på kryssikonet
+function closeNav() {
+    document.getElementById("minSidebar").classList.remove("open");
+    document.querySelector(".meny").classList.remove("change");
+}

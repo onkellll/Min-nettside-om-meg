@@ -10,19 +10,26 @@
 <body>
 
     <header class="header">
-        <a href="#home" class="logo">Iselin
-        <span>Steiner</span></a>
+        <a href="#home" class="logo">Iselin<span>Steiner</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        </header>
 
-        <nav class="navbar">
+         <!-- Hamburger-ikon i headeren -->
+         <div class="meny" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+       </div>
+                  
+            <!-- Meny (sidebar) -->
+    <nav id="minSidebar" class="sidebar">
             <a href="#home" class="active">Home</a>
-            <a href="#myStory">My Story</a>
+            <a href="#myInterests">My Interests</a>
             <a href="#education">Education</a>
             <a href="websites">Websites</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
     
     <section class="home" id="home">
         <div class="home-content">
@@ -31,7 +38,8 @@
             <p>I really like coding and playing video games. I am not 
                 that good at coding yet but im learning. Feel free to 
                 ask me anything you want or if you neeed help with coding. 
-                I'll try my best to help.</p>
+                I'll try my best to help.
+            </p>
 
             <div class="social-icons">
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
@@ -51,59 +59,65 @@
         </div>    
     </section>
 
-    <section class="myStory" id="myStory">
-        <h2 class="heading">My Story</h2>
+    <section class="myInterests" id="myInetrests">
+        <h2 class="heading">My Intrests</h2>
 
         <div class="timeline-items">
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2006
+                    <div class="timeline-date">Games
                     </div>
                     <div class="timeline-content">
-                        <h3>Birth date</h3>
-                        <p>I was born on 21. October 2006</p>
+                        <h3>What games i like</h3>
+                        <p>I'm really into story games, 
+                            shooting, horror, and action. 
+                            My top favorite games at the moment is 
+                            Read Dead Redemption, The Walking Dead series,
+                            Final Fantasy 7 Remake, Fortnite, Until Dawn, COD, 
+                            and all the Resident Evil Collection. </p>
                     </div>
                 
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2012
+                    <div class="timeline-date">Art
                     </div>
                     <div class="timeline-content">
-                        <h3>Elementary School</h3>
-                        <p>Started 1st grade at the age of 
-                            5 at Skrane Vannet, and got diagnosed 
-                            with ADHD in 3rd grade at the age of 8.</p>
+                        <h3>I'm and artist</h3>
+                        <p>I mostly draw in a  anime artsyle. 
+                            At the moment i'm trying to studie 
+                            how to draw bodys, and wepons. I'm curantly 
+                            drawing sprites and characters for my RPG Game. 
+                            I really like drawing futureristic outfits and wepons 
+                            like big swords and snipers with magic elements.</p>
                     </div>
                 
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020
+                    <div class="timeline-date">Coding
                     </div>
                     <div class="timeline-content">
-                        <h3>High Schools</h3>
-                        <p>Changed schools in 9th grade 
-                         from Skrane Vanne to Montessori.
-                        I Changed schools again in 10th grade to Alrekstad.</p>
+                        <h3>Interested early</h3>
+                        <p> got into coding in 8th grade, 
+                            i learned block coding. Now im 
+                            stuiding programing at Amalie Skram. 
+                            We are learning HTML, CSS, javascript, 
+                            and python.</p>
                     </div>
                 
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024
+                    <div class="timeline-date">Music
                     </div>
                     <div class="timeline-content">
-                        <h3>Amalie Skram</h3>
-                        <p>After some difficulties, and a 
-                            free year i finally have a good 
-                            mindset and motivation to go to school 
-                            and work again. I started 11th grade again, 
-                            and im doing pretty well now. </p>
+                        <h3></h3>
+                        <p> </p>
                     </div>
                 
             </div>
@@ -145,38 +159,42 @@
     </section>
 
   <section class="websites" id="websites">
-    <h2 class="heading">Websites</h2>    
+    <h2 class="heading">Websites</h2>  
+
          <div class="wbsites-cards">
              <div class="websites-box">
                  <div class="websites-imgBx">
                      <img src="bilder/hellokitty.jpg">
                  </div>
          <div class="websites-content">
-             <h2>Hello Kitty Clicker<br><span>Not Finished</span></h2>
+            <a href="https://onkellll.github.io/clicker/" class="btnClicker">Link</a>
+            <br>
+            <h2>Hello Kitty Clicker<br><span>Not Finished</span></h2>
          </div>
              </div>
 
     
             <div class="websites-box">
                  <div class="websites-imgBx">
-                     <img src="bilder/BrownHairGirl.jpeg">
+                     <img src="/bilder/food.jpg">
                  </div>
          <div class="websites-content">
-             <h2>Food Blog<br><span>Not Finished</span></h2>
+            <a href="https://onkellll.github.io/Flavors-of-the-World/" class="btnBlog">Link</a>
+             <h2>English Food Blog<br><span>Not Finished</span></h2>
          </div>
              </div>
 
     
             <div class="websites-box">
                  <div class="websites-imgBx">
-                     <img src="bilder/BlackHairMan.jpg">
+                     <img src="/bilder/ssp.jpg">
                  </div>
          <div class="websites-content">
-             <h2>??<br><span>??</span></h2>
+             <h2>Stein Saks Papir<br><span>Not Finished</span></h2>
          </div>
              </div>
          </div>
-
+         
   </section>  
 
    <section class="contact" id="contact"> 
